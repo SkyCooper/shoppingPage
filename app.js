@@ -35,7 +35,7 @@ const minus1 = () => {
 
 bagPlus.addEventListener("click", function () {
   bagSum.innerText = plus1();
-  bagTotal.innerText = +bagSum.innerText * 25.98;
+  bagTotal.innerText = +bagSum.innerText * 3990;
   subTotal.innerText =
     Number(bagTotal.innerText) +
     Number(shoeTotal.innerText) +
@@ -44,13 +44,13 @@ bagPlus.addEventListener("click", function () {
   totalPrice.innerText = (
     +subTotal.innerText +
     +taxPrice.innerText +
-    15
+    120
   ).toFixed(2);
 });
 
 bagMinus.addEventListener("click", function () {
   bagSum.innerText = minus1();
-  bagTotal.innerText = +bagSum.innerText * 25.98;
+  bagTotal.innerText = +bagSum.innerText * 3990;
   subTotal.innerText =
     Number(bagTotal.innerText) +
     Number(shoeTotal.innerText) +
@@ -61,20 +61,20 @@ bagMinus.addEventListener("click", function () {
     : (totalPrice.innerText = (
         +subTotal.innerText +
         +taxPrice.innerText +
-        15
+        120
       ).toFixed(2));
 });
 
 bagRemove.addEventListener("click", function () {
   document.querySelector(".bagproduct").style.display = "none";
   bagSum.innerText = 0;
-  bagTotal.innerText = +bagSum.innerText * 25.98;
+  bagTotal.innerText = +bagSum.innerText * 3990;
   subTotal.innerText =
     Number(bagTotal.innerText) +
     Number(shoeTotal.innerText) +
     Number(clockTotal.innerText);
   taxPrice.innerText = +subTotal.innerText * 0.18;
-  totalPrice.innerText = +subTotal.innerText + +taxPrice.innerText + 15;
+  totalPrice.innerText = +subTotal.innerText + +taxPrice.innerText + 120;
 });
 
 //!shoe
@@ -92,7 +92,7 @@ const minus2 = () => {
 
 shoePlus.addEventListener("click", function () {
   shoeSum.innerText = plus2();
-  shoeTotal.innerText = +shoeSum.innerText * 45.99;
+  shoeTotal.innerText = +shoeSum.innerText * 3199;
   subTotal.innerText =
     Number(bagTotal.innerText) +
     Number(shoeTotal.innerText) +
@@ -101,13 +101,13 @@ shoePlus.addEventListener("click", function () {
   totalPrice.innerText = (
     +subTotal.innerText +
     +taxPrice.innerText +
-    15
+    120
   ).toFixed(2);
 });
 
 shoeMinus.addEventListener("click", function () {
   shoeSum.innerText = minus2();
-  shoeTotal.innerText = +shoeSum.innerText * 45.99;
+  shoeTotal.innerText = +shoeSum.innerText * 3199;
   subTotal.innerText =
     Number(bagTotal.innerText) +
     Number(shoeTotal.innerText) +
@@ -118,20 +118,20 @@ shoeMinus.addEventListener("click", function () {
     : (totalPrice.innerText = (
         +subTotal.innerText +
         +taxPrice.innerText +
-        15
+        120
       ).toFixed(2));
 });
 
 shoeRemove.addEventListener("click", function () {
   document.querySelector(".shoeproduct").style.display = "none";
   shoeSum.innerText = 0;
-  shoeTotal.innerText = +shoeSum.innerText * 45.99;
+  shoeTotal.innerText = +shoeSum.innerText * 3199;
   subTotal.innerText =
     Number(bagTotal.innerText) +
     Number(shoeTotal.innerText) +
     Number(clockTotal.innerText);
   taxPrice.innerText = +subTotal.innerText * 0.18;
-  totalPrice.innerText = +subTotal.innerText + +taxPrice.innerText + 15;
+  totalPrice.innerText = +subTotal.innerText + +taxPrice.innerText + 120;
 });
 
 //! Clock
@@ -149,7 +149,7 @@ const minus3 = () => {
 
 clockPlus.addEventListener("click", function () {
   clockSum.innerText = plus3();
-  clockTotal.innerText = +clockSum.innerText * 74.99;
+  clockTotal.innerText = +clockSum.innerText * 1999;
   subTotal.innerText =
     Number(bagTotal.innerText) +
     Number(shoeTotal.innerText) +
@@ -158,13 +158,13 @@ clockPlus.addEventListener("click", function () {
   totalPrice.innerText = (
     +subTotal.innerText +
     +taxPrice.innerText +
-    15
+    120
   ).toFixed(2);
 });
 
 clockMinus.addEventListener("click", function () {
   clockSum.innerText = minus3();
-  clockTotal.innerText = +clockSum.innerText * 74.99;
+  clockTotal.innerText = +clockSum.innerText * 1999;
   subTotal.innerText =
     Number(bagTotal.innerText) +
     Number(shoeTotal.innerText) +
@@ -175,18 +175,18 @@ clockMinus.addEventListener("click", function () {
     : (totalPrice.innerText = (
         +subTotal.innerText +
         +taxPrice.innerText +
-        15
+        120
       ).toFixed(2));
 });
 
 clockRemove.addEventListener("click", function () {
   document.querySelector(".clockproduct").style.display = "none";
   clockSum.innerText = 0;
-  clockTotal.innerText = +clockSum.innerText * 74.99;
+  clockTotal.innerText = +clockSum.innerText * 1999;
   subTotal.innerText =
     Number(bagTotal.innerText) +
     Number(shoeTotal.innerText) +
     Number(clockTotal.innerText);
   taxPrice.innerText = +subTotal.innerText * 0.18;
-  totalPrice.innerText = +subTotal.innerText + +taxPrice.innerText + 15;
+  totalPrice.innerText = +subTotal.innerText + +taxPrice.innerText + 120;
 });
