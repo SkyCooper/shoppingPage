@@ -142,7 +142,13 @@ main form {
   margin-right: 20px;
   background-color: white;
   box-shadow: 4px 4px 14px;
+  transition: all 0.5s;
 }
+
+.product img:hover {
+  transform: scale(1.05);
+}
+
 
 .product-info {
   font-family: Mon, Arial, Helvetica, sans-serif;
@@ -180,10 +186,15 @@ main form {
 p {
   position: relative;
   display: block;
+
 }
 
 .quantity-controller p {
   line-height: 24px;
+}
+
+.quantity-controller i, .remove-product {
+    cursor: pointer;
 }
 
 .quantity-controller button {
@@ -193,6 +204,7 @@ p {
   border-radius: 5px;
   padding: 5px;
   text-align: center;
+  
 }
 
 .quantity-controller button i {
